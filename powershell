@@ -1,0 +1,8 @@
+
+Cheatsheet de newbie
+/? ---> ayuda
+
+"-ExecutionPolicy Bypass" ----> para omitir la politica de ejecucion del script que vayas a ejecutar, no aplica ninguna y directamente ejecuta el script
+"-ExecutionPolicy Unrestricted" ----> parecido a bypass pero te da warnings y tal, mejor usar bypass y asi no te molesta 
+"-WindowStyle Hidden" ----> Para que el script/comando que ejecutas no abra una nueva ventana de powershell, ideal para probadores de bolis (pentesters)
+"-Command comandoAEjecutar" si quieres mas de uno, pues lo metes entre "", Ejemplo 'PowerShell -WindowStyle Hidden -Command Get-Process
