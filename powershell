@@ -1,8 +1,14 @@
 
 Cheatsheet de newbie
 /? ---> ayuda
+"Get-Help" ----> como el man de linux, se puede agregar el flag -Examples para que te de ejemplos : "-Get-Help Get-Process -Examples" tambien puedes actualizar el get help con "Update-Help"
+"Get-Command" ----> Te lista los comandos que matcheen el filtro : "Get-Command -Name *Firewall*" lista todos los comandos que tengan firewall en el nombre
 
-"-ExecutionPolicy Bypass" ----> para omitir la politica de ejecucion del script que vayas a ejecutar, no aplica ninguna y directamente ejecuta el script
+COMANDO / ABREVIACION 
+"-ExecutionPolicy Bypass" / "-ep Bypass" / "-ex by" ----> para omitir la politica de ejecucion del script que vayas a ejecutar, no aplica ninguna y directamente ejecuta el script
 "-ExecutionPolicy Unrestricted" ----> parecido a bypass pero te da warnings y tal, mejor usar bypass y asi no te molesta 
-"-WindowStyle Hidden" ----> Para que el script/comando que ejecutas no abra una nueva ventana de powershell, ideal para probadores de bolis (pentesters)
-"-Command comandoAEjecutar" si quieres mas de uno, pues lo metes entre "", Ejemplo 'PowerShell -WindowStyle Hidden -Command Get-Process
+"-WindowStyle Hidden" / "-Wi hi" / "-W h" ----> Para que el script/comando que ejecutas no abra una nueva ventana de powershell, ideal para probadores de bolis (pentesters)
+"-Command comandoAEjecutar" ----> si quieres mas de uno, pues lo metes entre "", Ejemplo 'PowerShell -WindowStyle Hidden -Command Get-Process
+"-EncodedCommand $encodedCommand" / "-enco" / "-ec"  ----> Ejecuta comandos o scripts encodeados en base64
+"-NoProfile" ----> Asi no carga perfil de usuario y quizas puedes evadir alguna restriccion aplicada a ese usuario
+"-Version X" ----> Si especificas la version al llamar al ejecutable de powershell, downgradeas la version a la que hayas especificado : "PowerShell -Version 2" 
